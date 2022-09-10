@@ -25,8 +25,8 @@ const[Veggie,setVeggie]=useState([])
     <div>
   
       <Wrapper>
-        <h3 style={{textAlign:"left",fontSize:"30px",padding:"10px"}}>Chicken Special</h3>
-  <Splide options={{perPage:4,
+        <h3 style={{textAlign:"center",fontSize:"30px",padding:"10px",color:"gold",padding:"1rem"}}>Chicken Special</h3>
+  <Splide options={{perPage:6,
    pagination:false,drag:'free',
   gap:"1rem"}}>
  {Veggie.map((e)=>{
@@ -67,7 +67,6 @@ img{
  
 width:12rem;
 height:13rem;
-  border-radius:3rem;
   padding:1rem;
 }
 `

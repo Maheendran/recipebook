@@ -1,0 +1,19 @@
+.searchconatiner{
+    margin: auto;
+    width: 80%;
+    padding: 1rem;
+}
+.searchconatiner img{
+    width: 20%;
+    border-radius: 20px;
+    padding: 1rem;
+}
+.searchconatiner button{
+    background-color: white;
+    padding: 1rem;
+
+}
+.searchconatiner button:hover{
+    background-color: rgb(12, 10, 10);
+    color: rgb(255, 255, 255);
+}

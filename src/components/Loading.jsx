@@ -2,6 +2,6 @@ import React from 'react'
 
 export const Loading = () => {
   return (
-    <div>Loading.....</div>
+    <div><h1 style={{color:"white"}}>Loading.....</h1></div>
   )
 }

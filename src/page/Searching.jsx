@@ -4,14 +4,12 @@ import{BsSearch}from'react-icons/bs'
 import styled from 'styled-components';
 
 export const Searching = () => {
-
     const Navigate=useNavigate()
-
     const[data,setData]=useState("")
     const handleclick=(e)=>{
     e.preventDefault();
-    Navigate("/cusines/"+data)
-    }
+    if(data.length>0){
+      Navigate("/cusines/"+data)}}
   return (
     <div>
 
@@ -19,7 +17,7 @@ export const Searching = () => {
 <Input>
         <input type="text" placeholder='search' onChange={(e)=>setData(e.target.value)}
          value={data}/>
-     <BsSearch onClick={handleclick}></BsSearch>
+     <BsSearch onClick={handleclick} style={{color:"white"}}></BsSearch>
      </Input>
         </formstyle>
       
@@ -30,9 +28,10 @@ const Input=styled.div`
 input{
 margin:20px;
 padding:4px 10px;
-width:500px;
+width:400px;
 height:30px;
 border-radius:5px;
+background-color:white;
 margin-bottom:20px;
 border:0.25px solid black;
 

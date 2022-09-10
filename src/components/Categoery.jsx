@@ -48,14 +48,13 @@ const Box=styled.div`
 padding:8px;
 font-size:12px;
 align-item:center;
-width:50px;
-height:50px;
+width:40px;
+height:40px;
 border-radius:50%;
-// background-color:grey;
-
+color:white;
+border:1px solid white;
+border-style: dashed;
 text-align:center;
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-h4{
-margin-top:10px;
-}
+
 `

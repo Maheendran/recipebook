@@ -7,6 +7,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {NavLink} from "react-router-dom"
 import {Loading} from'../components/Loading'
+import { Navbar } from "../components/Navbar";
+import { Searching } from "./Searching";
 function Cusines(){
 const[popular,setPopular]=useState([])
 const[load,setLoad]=useState("false")
@@ -33,6 +35,8 @@ const param=useParams()
   return (
    
   <>
+  <Navbar/>
+  <Searching/>
      <div> {load&& <Loading/>}  </div>
    
   <Grid>
